@@ -133,7 +133,7 @@ html{
   top: -38px;
 }
 
-/* 太单调了，让心跳动起来 */
+/* 我的心交给你啦，因为你而让我心动起来 */
 @keyframes throb {
   0% {
     transform: scale(1) rotate(45deg);
@@ -151,7 +151,7 @@ html{
   animation: throb 1s infinite linear;
 }
 /*
-* Ok，完成！
+* Ok，完结！散花花啦
 * 我爱你，其心可鉴！！！
 */
 
@@ -214,8 +214,13 @@ html{
             this.setState({heartRains});
             setTimeout(() => {
                 this.removeRain(time);
+				this.openUrl();
             }, stayTime);
         }
+    }
+	
+	openUrl() {
+        window.open("https://522622504.github.io/love2023/");
     }
 
     removeRain(time) {
